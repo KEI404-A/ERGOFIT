@@ -1379,9 +1379,11 @@
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="h-100 p-4" style="background: white; border-radius: var(--border-radius); box-shadow: var(--shadow-medium); border: 2px solid #f1f5f9; transition: all 0.3s ease;">
                 <div class="text-center mb-4">
-                    <div class="partner-logo-container" style="width: 180px; height: 180px; margin: 0 auto; background: white; border-radius: 20px; display: flex; align-items: center; justify-content: center; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                        <img src="images\enuma.png" alt="Enuma Technology Logo" class="partner-logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
-                    </div>
+                    <a href="https://enumatechnology.com" target="_blank" style="text-decoration: none;">
+                        <div class="partner-logo-container" style="width: 180px; height: 180px; margin: 0 auto; background: transparent; display: flex; align-items: center; justify-content: center; padding: 20px; transition: transform 0.3s ease; cursor: pointer;">
+                            <img src="images/enuma.png" alt="Enuma Technology Logo" class="partner-logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                    </a>
                 </div>
                 <h4 class="text-center mb-3" style="color: var(--text-dark); font-weight: 700;">Enuma Technology</h4>
                 <p style="color: var(--text-light); text-align: center; line-height: 1.8;">
@@ -1404,9 +1406,11 @@
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
             <div class="h-100 p-4" style="background: white; border-radius: var(--border-radius); box-shadow: var(--shadow-medium); border: 2px solid #f1f5f9; transition: all 0.3s ease;">
                 <div class="text-center mb-4">
-                    <div class="partner-logo-container" style="width: 180px; height: 180px; margin: 0 auto; background: white; border-radius: 20px; display: flex; align-items: center; justify-content: center; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                        <img src="images/lpske.png" alt="LPSKE Logo" class="partner-logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
-                    </div>
+                    <a href="https://lpske.ti-uns.com" target="_blank" style="text-decoration: none;">
+                        <div class="partner-logo-container" style="width: 180px; height: 180px; margin: 0 auto; background: transparent; display: flex; align-items: center; justify-content: center; padding: 20px; transition: transform 0.3s ease; cursor: pointer;">
+                            <img src="images/lpske.png" alt="LPSKE Logo" class="partner-logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                    </a>
                 </div>
                 <h4 class="text-center mb-3" style="color: var(--text-dark); font-weight: 700;">LPSKE</h4>
                 <p class="text-center mb-2" style="color: var(--primary-color); font-weight: 600; font-size: 0.9rem;">
@@ -1432,9 +1436,11 @@
         <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="h-100 p-4" style="background: white; border-radius: var(--border-radius); box-shadow: var(--shadow-medium); border: 2px solid #f1f5f9; transition: all 0.3s ease;">
                 <div class="text-center mb-4">
-                    <div class="partner-logo-container" style="width: 180px; height: 180px; margin: 0 auto; background: white; border-radius: 20px; display: flex; align-items: center; justify-content: center; padding: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
-                        <img src="images/stemsa.png" alt="SMK N 2 Surakarta Logo" class="partner-logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
-                    </div>
+                    <a href="{{ route('team') }}" style="text-decoration: none;">
+                        <div class="partner-logo-container" style="width: 180px; height: 180px; margin: 0 auto; background: transparent; display: flex; align-items: center; justify-content: center; padding: 20px; transition: transform 0.3s ease; cursor: pointer;">
+                            <img src="images/stemsa.png" alt="SMK N 2 Surakarta Logo" class="partner-logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                        </div>
+                    </a>
                 </div>
                 <h4 class="text-center mb-3" style="color: var(--text-dark); font-weight: 700;">SMK N 2 Surakarta</h4>
                 <p style="color: var(--text-light); text-align: center; line-height: 1.8;">
@@ -1454,6 +1460,12 @@
         </div>
     </div>
 </div>
+
+<style>
+.partner-logo-container:hover {
+    transform: scale(1.05);
+}
+</style>
                 <!-- Partnership Quote -->
                 <div class="text-center mt-5 pt-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="p-5" style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(16, 185, 129, 0.1) 100%); border-radius: var(--border-radius); border: 2px solid rgba(37, 99, 235, 0.2);">
