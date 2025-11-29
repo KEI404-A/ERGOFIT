@@ -1,61 +1,208 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ERGOFIT
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Precision in Every Motion**
 
-## About Laravel
+ERGOFIT is an intelligent platform designed to prevent Musculoskeletal Disorders (MSDs) in the workplace through real-time monitoring using advanced sensor technology and machine learning algorithms. This is the first comprehensive solution in Indonesia that integrates IoT, AI, and ergonomic expertise to create a proactive and adaptive workplace health ecosystem.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🎯 Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+ERGOFIT revolutionizes workplace health by providing real-time posture monitoring and predictive analytics to prevent MSDs before they develop into serious injuries. The system uses IMU (Inertial Measurement Unit) sensors and machine learning algorithms to analyze worker postures, calculate RULA (Rapid Upper Limb Assessment) scores, and provide immediate feedback through visual, audio, and haptic notifications.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Key Features
 
-## Learning Laravel
+### Core Capabilities
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Real-time Monitoring**: 24/7 posture monitoring with ultra-low latency for instant response to risky postures
+- **Predictive Analytics**: Predicts MSD risks based on historical work patterns using advanced machine learning models
+- **AI-Powered Personal Coaching**: Provides ergonomic tips tailored to each worker's characteristics and work patterns
+- **Advanced Analytics Dashboard**: Comprehensive insights for optimizing workplace ergonomics
+- **Cloud Integration**: Seamless cloud integration with multi-platform access and real-time data synchronization
+- **Customizable Alerts**: Notification system that can be customized according to industry needs and worker preferences
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Technology Highlights
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **RULA Scoring System**: Real-time risk assessment using modified RULA methodology
+  - Score 1-2: Acceptable
+  - Score 3-4: Investigate further
+  - Score 5-6: Investigate & change soon
+  - Score 7: Investigate & change immediately
 
-## Laravel Sponsors
+- **Multimodal Feedback**: 
+  - Visual notifications
+  - Audio alerts
+  - Haptic vibrations
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🛠️ Technology Stack
 
-### Premium Partners
+### Backend
+- **Laravel 12**: PHP web application framework
+- **PHP 8.2+**: Server-side programming language
+- **SQLite**: Database (can be configured for other databases)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Frontend
+- **Bootstrap 5.3.2**: CSS framework for responsive design
+- **Tailwind CSS 4.0**: Utility-first CSS framework
+- **Vite 7.0**: Next-generation frontend build tool
+- **AOS (Animate On Scroll)**: Scroll animation library
+- **Bootstrap Icons**: Icon library
 
-## Contributing
+### Development Tools
+- **Laravel Vite Plugin**: Asset bundling
+- **Axios**: HTTP client
+- **Concurrently**: Run multiple commands simultaneously
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📋 Prerequisites
 
-## Code of Conduct
+Before you begin, ensure you have the following installed:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **PHP** >= 8.2
+- **Composer** (PHP dependency manager)
+- **Node.js** >= 18.x and **npm**
+- **SQLite** (or another database like MySQL/PostgreSQL)
 
-## Security Vulnerabilities
+## 🚀 Installation
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd ERGOFIT
+   ```
 
-## License
+2. **Install PHP dependencies**
+   ```bash
+   composer install
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+3. **Install Node.js dependencies**
+   ```bash
+   npm install
+   ```
+
+4. **Environment setup**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+5. **Database setup**
+   ```bash
+   # SQLite database is created automatically, or configure your preferred database in .env
+   php artisan migrate
+   ```
+
+6. **Build assets**
+   ```bash
+   npm run build
+   # Or for development with hot reload:
+   npm run dev
+   ```
+
+7. **Start the development server**
+   ```bash
+   php artisan serve
+   ```
+
+   The application will be available at `http://localhost:8000`
+
+## 🎮 Usage
+
+### Development Mode
+
+For a complete development experience with hot reload, queue processing, and logging:
+
+```bash
+composer dev
+```
+
+This command runs:
+- Laravel development server
+- Queue listener
+- Laravel Pail (log viewer)
+- Vite development server
+
+### Production Build
+
+```bash
+npm run build
+php artisan optimize
+```
+
+## 📁 Project Structure
+
+```
+ERGOFIT/
+├── app/                    # Application core
+│   ├── Http/
+│   │   └── Controllers/   # Application controllers
+│   ├── Models/            # Eloquent models
+│   └── Providers/         # Service providers
+├── bootstrap/             # Application bootstrap files
+├── config/                # Configuration files
+├── database/              # Database migrations and seeders
+├── public/                # Public assets
+│   ├── images/           # Image assets
+│   └── logo_ergofit.png  # Project logo
+├── resources/
+│   ├── css/              # Stylesheets
+│   ├── js/               # JavaScript files
+│   └── views/            # Blade templates
+│       ├── ergofit.blade.php      # Main landing page
+│       └── smkn2-team.blade.php   # Team page
+├── routes/
+│   └── web.php           # Web routes
+├── storage/              # Storage directory
+├── tests/                # Test files
+└── vendor/               # Composer dependencies
+```
+
+## 🌐 Routes
+
+- `/` - Main ERGOFIT landing page
+- `/ergofit` - ERGOFIT page (alias)
+- `/team` - Team information page
+
+## 🧪 Testing
+
+Run the test suite:
+
+```bash
+composer test
+```
+
+Or use PHPUnit directly:
+
+```bash
+php artisan test
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## 🔒 Security
+
+If you discover any security vulnerabilities, please send an email to the project maintainers. All security vulnerabilities will be promptly addressed.
+
+## 📞 Support
+
+For support, please contact the development team or open an issue in the repository.
+
+## 🙏 Acknowledgments
+
+- Laravel Framework
+- Bootstrap Team
+- All contributors and partners
+
+---
+
+**ERGOFIT** - *Precision in Every Motion*
